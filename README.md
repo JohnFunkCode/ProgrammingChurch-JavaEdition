@@ -28,3 +28,6 @@ The main goal is to expand our ability to build stuf in Java using modern practi
 - Read [Introdution to the Java Environment](https://www.oreilly.com/library/view/java-in-a/9781492037248/ch01.html)
 - Do the first 10 modules of [Mike Dane's Java Programming Language Tutorial](https://www.youtube.com/playlist?list=PLLAZ4kZ9dFpPpdR_9IQBUDLjYalvdrGGb)
 - Do stage 1 of jetbrains academy java material on [Mindsweeoper project](https://hyperskill.org/curriculum)
+### Topics from our 1/24/2021 live discussion
+- Java Compiler, JVM, and basics of the Classloader and Packages
+- Building and running 'hello world' without a package and inside a package - Related Article[Introduction to Default Package in Java](https://www.educba.com/default-package-in-java/)
