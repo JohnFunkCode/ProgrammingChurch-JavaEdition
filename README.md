@@ -1,6 +1,6 @@
 # ProgrammingChurch-JavaEdition
-## Overall Goals of the program
-We'll study the following concepts:
+## Overall Goals
+The main goal is to expand our ability to build stuf in Java using modern practices for 2021 and have some fun along the way.  We'll study the following concepts:
 1. Java language basics
 2. OO Design - making the leap to Objects rather than funtions
 3. Dependancy Management (package mangement) with Maven and Gradle
