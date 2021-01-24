@@ -6,20 +6,20 @@ We'll study the following concepts:
 3. Dependancy Management (package mangement) with Maven and Gradle
 4. Spring and Spring boot
 5. Enterprise Patters for Java
-- Source Control
-- CI/CD patterns
-6 Enterprise Architecture
-- Databases / schema change management
-- Config management
-- Security
-- End Point Management
-- Messaging Systems
-- Caching patters
-7 Various Cloud Deployments
-- Docker and K8s
-- Azure
-- GCP native
-- Amazon native
+  - Source Control
+  - CI/CD patterns
+6. Enterprise Architecture
+  - Databases / schema change management
+  - Config management
+  - Security
+  - End Point Management
+  - Messaging Systems
+  - Caching patters
+7. Various Cloud Deployments
+  - Docker and K8s
+  - Azure
+  - GCP native
+  - Amazon native
 
 # Assignments and Discussions for our Sunday Java Coding Sessions
 
