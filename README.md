@@ -1,5 +1,5 @@
 # ProgrammingChurch-JavaEdition
-##Overall Goals of the program
+## Overall Goals of the program
 We'll study the following concepts:
 1. Java language basics
 2. OO Design - making the leap to Objects rather than funtions
