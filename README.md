@@ -2,7 +2,7 @@
 ##Overall Goals of the program
 We'll study the following concepts:
 1. Java language basics
-2. OO Design - making the leap to Objects rather than funcitonal
+2. OO Design - making the leap to Objects rather than funtions
 3. Dependancy Management (package mangement) with Maven and Gradle
 4. Spring and Spring boot
 5. Enterprise Patters for Java
