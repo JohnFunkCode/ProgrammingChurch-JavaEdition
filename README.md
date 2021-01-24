@@ -23,7 +23,7 @@ We'll study the following concepts:
 
 # Assignments and Discussions for our Sunday Java Coding Sessions
 
-## First Assignment
+## First Assignment 01/17/21
 - Do all the modules in the [w3schools program Java Totorial](https://www.w3schools.com/java/default.asp) up to the Java Classes section
 - Read [Introdution to the Java Environment](https://www.oreilly.com/library/view/java-in-a/9781492037248/ch01.html)
 - Do the first 10 modules of [Mike Dane's Java Programming Language Tutorial](https://www.youtube.com/playlist?list=PLLAZ4kZ9dFpPpdR_9IQBUDLjYalvdrGGb)
