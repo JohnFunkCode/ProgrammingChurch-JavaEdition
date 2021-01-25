@@ -1,6 +1,6 @@
 # Programming Church - 2021 JavaEdition
 ## Overall Goals
-The main goal is to expand our ability to build stuf in Java using modern practices for 2021 and have some fun along the way. We've keeping the 'Programming Church' moniker  because we meet on Sunday morning for and there's a lot of preaching and teaching going on.   He're is a list of concepts we'll be studying:
+The main goal is to expand our ability to build stuf in Java using modern practices for 2021 and have some fun along the way. We've keeping the irreverant 'Programming Church' moniker because we meet on Sunday morning for and there's a whole lot of preaching and teaching going on.   He're is a list of concepts we'll take on:
 1. Java language basics
 2. OO Design - making the leap to Objects rather than funtions
 3. Dependancy Management (package mangement) with Maven and Gradle
