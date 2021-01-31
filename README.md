@@ -31,3 +31,29 @@ The main goal is to expand our ability to build stuf in Java using modern practi
 ### Notes from our 1/24/2021 live discussion
 - Java Compiler, JVM, and basics of the Classloader and Packages
 - Building and running 'hello world' without a package and inside a package - Related Article: [Introduction to Default Package in Java](https://www.educba.com/default-package-in-java/)
+### Notes from 1/31/21 live discussion
+* type casting 
+  * The example below calculates the slope using int math, then casts it to a double
+    * To properly complete the math, we could either cast the scanner ints to doubles, or cast each side of the division to double 
+  * When doing math, it's a good idea to avoid `int`s
+
+```java
+  int x1 = scanner.nextInt();
+  int y1 = scanner.nextInt();
+  int x2 = scanner.nextInt();
+  int y2 = scanner.nextInt();
+
+   double slope = Math.abs(y1 - y2) / Math.abs(x1 - x2);
+```
+* Object Oriented Programming
+  * Passing messages between objects for it to handle the message - don't care how outside the object
+  * Diagrams - describe code, use as a plan for writing code, UML (Unified Modeling Language)
+    * Sequence diagram
+    * Package diagram
+    * State diagram
+  * Principles of Object Oriented Design - SOLID
+    * Single Responsibility - each class should have a single responsibility
+    * Open-Closed - open for extension, closed for modification
+    * Liskov Substitution Principle - coding to the interface not the base class
+    * Interface Segregation - create an Object that's a composit of other Objects
+    * Dependency Injection 
