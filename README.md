@@ -23,7 +23,7 @@ The main goal is to expand our ability to build stuf in Java using modern practi
 
 # Assignments and Discussions for our Sunday Java Coding Sessions
 
-## First Assignment 01/17/21
+## 01/17/2021 First Assignment
 - Do all the modules in the [w3schools program Java Totorial](https://www.w3schools.com/java/default.asp) up to the Java Classes section
 - Read [Introdution to the Java Environment](https://www.oreilly.com/library/view/java-in-a/9781492037248/ch01.html)
 - Do the first 10 modules of [Mike Dane's Java Programming Language Tutorial](https://www.youtube.com/playlist?list=PLLAZ4kZ9dFpPpdR_9IQBUDLjYalvdrGGb)
@@ -31,11 +31,18 @@ The main goal is to expand our ability to build stuf in Java using modern practi
 ### Notes from our 1/24/2021 live discussion
 - Java Compiler, JVM, and basics of the Classloader and Packages
 - Building and running 'hello world' without a package and inside a package - Related Article: [Introduction to Default Package in Java](https://www.educba.com/default-package-in-java/)
+
+## 01/31/2021
+### Goals for Today:
+- Review progress with [JetBrains Mindsweeoper Exercises](https://hyperskill.org/curriculum)
+- Move the discussions to [Discord](https://discord.com/) to get low-latency multi-screen shareing capability
+- Introduce Object-Oriented design / coding topics
+
 ### Notes from 1/31/21 live discussion
 * type casting 
   * The example below calculates the slope using int math, then casts it to a double
     * To properly complete the math, we could either cast the scanner ints to doubles, or cast each side of the division to double 
-  * When doing math, it's a good idea to avoid `int`s
+  * When doing math, it's a good idea to avoid int data types becuase division can cause hard to find bugs.
 
 ```java
   int x1 = scanner.nextInt();
@@ -57,3 +64,12 @@ The main goal is to expand our ability to build stuf in Java using modern practi
     * Liskov Substitution Principle - coding to the interface not the base class
     * Interface Segregation - create an Object that's a composit of other Objects
     * Dependency Injection 
+
+## Assignments for next week
+- Finish Stage 1 of the  [JetBrains Mindsweeoper Exercises](https://hyperskill.org/curriculum) (~3 hours)
+- Start Stage 2 of the [JetBrains Mindsweeoper Exercises](https://hyperskill.org/curriculum) but stop after the Functional Decomposition module (~1.5 hour)
+- Read [An introduction to the Unified Modeling Language](https://developer.ibm.com/articles/an-introduction-to-uml/) (15 minutes)
+- Read [Unified Modeling Language (UML) | An Introduction](https://www.geeksforgeeks.org/unified-modeling-language-uml-introduction/] and the Recommended articles linked at the bottom of the page. (20 minutes)
+- Review [The Five SOLID Principals of Object-Oriented Design](https://www.youtube.com/watch?v=HyQlCMU_Ylw) Video  (15 minutes)
+- Read [Design Patterns](https://en.wikipedia.org/wiki/Design_Patterns] article on Wikipiedia (10 minutes)
+
