@@ -14,7 +14,7 @@ The main goal is to expand our ability to build stuf in Java using modern practi
   - Security
   - End Point Management
   - Messaging Systems
-  - Caching patters
+  - Caching patterns
 7. Various Cloud Deployments
   - Docker and K8s
   - Azure
@@ -24,17 +24,17 @@ The main goal is to expand our ability to build stuf in Java using modern practi
 # Assignments and Discussions for our Sunday Java Coding Sessions
 
 ## 01/17/2021 First Assignment
-- Do all the modules in the [w3schools program Java Totorial](https://www.w3schools.com/java/default.asp) up to the Java Classes section
+- Do all the modules in the [w3schools program Java Tutorial](https://www.w3schools.com/java/default.asp) up to the Java Classes section
 - Read [Introdution to the Java Environment](https://www.oreilly.com/library/view/java-in-a/9781492037248/ch01.html)
 - Do the first 10 modules of [Mike Dane's Java Programming Language Tutorial](https://www.youtube.com/playlist?list=PLLAZ4kZ9dFpPpdR_9IQBUDLjYalvdrGGb)
-- Do stage 1 of jetbrains academy java material on [Mindsweeoper project](https://hyperskill.org/curriculum)
+- Do stage 1 of JetBrains Academy Java material on [Mindsweeper project](https://hyperskill.org/curriculum)
 ### Notes from our 1/24/2021 live discussion
 - Java Compiler, JVM, and basics of the Classloader and Packages
 - Building and running 'hello world' without a package and inside a package - Related Article: [Introduction to Default Package in Java](https://www.educba.com/default-package-in-java/)
 
 ## 01/31/2021
 ### Goals for Today:
-- Review progress with [JetBrains Mindsweeoper Exercises](https://hyperskill.org/curriculum)
+- Review progress with [JetBrains Mindsweeper Exercises](https://hyperskill.org/curriculum)
 - Move the discussions to [Discord](https://discord.com/) to get low-latency multi-screen shareing capability
 - Introduce Object-Oriented design / coding topics
 
@@ -50,7 +50,7 @@ The main goal is to expand our ability to build stuf in Java using modern practi
   int x2 = scanner.nextInt();
   int y2 = scanner.nextInt();
 
-   double slope = Math.abs(y1 - y2) / Math.abs(x1 - x2);
+  double slope = Math.abs(y1 - y2) / Math.abs(x1 - x2);
 ```
 * Object Oriented Programming
   * Passing messages between objects for it to handle the message - don't care how outside the object
@@ -62,12 +62,12 @@ The main goal is to expand our ability to build stuf in Java using modern practi
     * Single Responsibility - each class should have a single responsibility
     * Open-Closed - open for extension, closed for modification
     * Liskov Substitution Principle - coding to the interface not the base class
-    * Interface Segregation - create an Object that's a composit of other Objects
+    * Interface Segregation - create an Object that's a composite of other Objects
     * Dependency Injection 
 
 ## Assignments for next week
-- Finish Stage 1 of the  [JetBrains Mindsweeoper Exercises](https://hyperskill.org/curriculum) (~3 hours)
-- Start Stage 2 of the [JetBrains Mindsweeoper Exercises](https://hyperskill.org/curriculum) but stop after the Functional Decomposition module (~1.5 hour)
+- Finish Stage 1 of the  [JetBrains Mindsweeper Exercises](https://hyperskill.org/curriculum) (~3 hours)
+- Start Stage 2 of the [JetBrains Mindsweeper Exercises](https://hyperskill.org/curriculum) but stop after the Functional Decomposition module (~1.5 hour)
 - Read [An introduction to the Unified Modeling Language](https://developer.ibm.com/articles/an-introduction-to-uml/) (15 minutes)
 - Read [Unified Modeling Language (UML) | An Introduction](https://www.geeksforgeeks.org/unified-modeling-language-uml-introduction/] and the Recommended articles linked at the bottom of the page. (20 minutes)
 - Review [The Five SOLID Principals of Object-Oriented Design](https://www.youtube.com/watch?v=HyQlCMU_Ylw) Video  (15 minutes)
