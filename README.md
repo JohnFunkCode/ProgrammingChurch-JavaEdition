@@ -5,7 +5,7 @@ The main goal is to expand our ability to build stuf in Java using modern practi
 2. OO Design - making the leap to Objects rather than funtions
 3. Dependancy Management (package mangement) with Maven and Gradle
 4. Spring and Spring boot
-5. Enterprise Patters for Java
+5. Enterprise Patterns for Java
   - Source Control
   - CI/CD patterns
 6. Enterprise Architecture
