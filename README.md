@@ -100,14 +100,80 @@ The main goal is to expand our ability to build stuf in Java using modern practi
 # 2/14/2021
 ## Goals for the Week
 ## Discussion Notes
-We reviewed the Sudoku problem from the [JetBrains Academy Mine Sweeper Project](https://hyperskill.org/projects/77?track=1).
-We discussed the code that was in many of the solutions.   The algorithm that seems to be predominant in the solutions on JetBrains Academy is to simply look for duplicate number in the rows and column.   There was another solution that used an additive checksum algorithm to determine if a row or column matched the business rules.  Both algorithms are incomplete and fail in-depth verification.  They rely on the fact that if both the rows and the columns passed the check everything was good, although independantly either check is incomplete and it's easy to formulate a test case that will make them fail.  Both of those aproaches set-off alarm bells because neither approach is verifiability correct.  They might generate the needed output for this simple exercise, but in either case it is easy to develop a test case that makes the code fail.  Even worst the additive checksum approach relies on the columns adding up, and the rows adding up.  That means checkRows() can return true, but it's really only true if checkColumns() is also true.  That introduces a really dangerous logic dependancy between these two code modules.  It's easy enough to write an if statement that says "if( checkRows() && checkColumns) the model is correct".  However if in the future someone tries to re-use checkRows() independently they will find it doesn't work on it's own.  In big systems those bugs are very difficult to find and fix.   As an alternative, we decided it would be better to use TDD and develop several test cases to exercise the code before we wrote a solution.  Those test cases included rows and columns that didn't have duplicates, but failed the sudoku business rules, and rows and columns that passed an additive checksum but failed the sudoku roles due the the communitive property of addition.   In the end our solution was to keep track of the digits we saw in a separate array.   If we saw all the digits we expect know the row or column is correct.
+ We reviewed the Sudoku problem from the [JetBrains Academy Mine Sweeper project](https://hyperskill.org/projects/77?track=1).
+<img width="1055" alt="Screen Shot 2021-02-28 at 12 53 00 PM" src="https://user-images.githubusercontent.com/28072589/109432521-d3470880-79c8-11eb-8e19-9fbd20e5c400.png">
+
+
+  We discussed the code that was in many of the solutions.   The algorithm that seems to be predominant in the solutions on JetBrains Academy is to simply look for any duplicate number in the rows, column, and each mini-square. There was another solution that used an additive checksum algorithm to determine if a row or column matched the business rules.  Below is a sample of the second solution.
+```java
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int nsq = n * n; 
+        boolean solved = true;
+//        The sum of each row, column, and nxn square will be the same in a solved sudoku
+        int sum = 0;
+        for (int i = nsq; i > 0; i--) {
+            sum += i;
+        }
+
+        int[][] arr = new int[nsq][nsq];
+
+        // Check row validity while adding data
+        for (int col = 0; col < nsq; col++) {
+            int rowSum = 0;
+            for (int row = 0; row < nsq; row++) {
+                arr[col][row] = scanner.nextInt();
+                rowSum += arr[col][row];
+            }
+            if (rowSum != sum) {
+                solved = false;
+                break;
+            }
+        }
+        
+        // flip the row/column loops to calculate columns
+        for (int row = 0; row < nsq; row++) {
+            int columnSum = 0;
+            for (int col = 0; col < nsq; col++) {
+                columnSum += arr[col][row];
+            }
+            if (columnSum != sum) {
+                solved = false;
+                break;
+            }
+        }
+
+        // check the nxn squares - use same loops, but incease start place by n
+        for (int i = 0; i < nsq; i += n) {
+            int squareSum = 0;
+            for (int col = i; col < n + i; col++) {
+                for (int row = i; row < n + i; row++) {
+                    squareSum += arr[col][row];
+                }
+            }
+            if (squareSum != sum) {
+                solved = false;
+                break;
+            }
+        }
+        
+        System.out.println(solved ? "YES" : "NO");
+    }
+}
+```
+  Both algorithms are incomplete and fail in-depth verification, setting off alarm bells because neither approach is verifiability correct.  They rely on the fact that if both the rows and the columns passed the check everything was good, although independantly either check is incomplete.   They might generate the needed output for this simple exercise, but in either case it is easy to develop a test case that makes the code fail.  
+  Even worse, refering to the additive checksum solution above, there is an implicit dependency between code blocks.  Columns and rows and mini-squares must add up for the code to be correct.  That means checkRows() can return true, but it's really only true if checkColumns() and checkSquares is also true, that introduces a really dangerous logic dependancy between these two code modules.  It's easy enough to write an if statement that says "if( checkRows() && checkColumns) the model is correct".  However if in the future someone tries to re-use checkRows() independently they will find it can't work on it's own.  In big systems those bugs are very difficult to find and fix.   
+    As an alternative, we decided it would be better to use TDD and develop several test cases to exercise the code before we wrote a solution.  Those test cases included rows and columns that didn't have duplicates, but failed the sudoku business rules, and rows and columns that passed an additive checksum but failed the sudoku roles due the the communitive property of addition.   In the end our solution was to keep track of the digits we saw in a separate array.   If we saw all the digits we expect know the row or column is correct.
 
 ## Assignments for next week
 - Continue to work through the coding examples in stage 3 and 4 of [JetBrains Academy Mine Sweeper project)](https://hyperskill.org/projects/77?track=1).
 - Read the Java Coding Conventions at: https://www.oracle.com/java/technologies/javase/codeconventions-introduction.html
 - Listen to: [Security Now Podcast 807](https://twit.tv/shows/security-now/episodes/807) Dependancy Coversion story at 1:28:30
-- Listen to the [Security Now Podcast 807](https://twit.tv/shows/security-now/episodes/807) story on Microsoft's final “Solorigate” update at 50:00.  It emphasized the importance of keeping secrets separate from your code.  
+- Listen to the [Security Now Podcast 807](https://twit.tv/shows/security-now/episodes/807) story on Microsoft's final “Solorigate” update at 50:00.  It emphasized the importance of keeping secrets separate from your code.
 [![Security Now Podcast 807](SecurityNow807.png)](https://twit.tv/shows/security-now/episodes/807)
 
 # 2/14/2021
