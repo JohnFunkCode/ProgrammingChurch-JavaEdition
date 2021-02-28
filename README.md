@@ -73,15 +73,16 @@ The main goal is to expand our ability to build stuf in Java using modern practi
 
 # 2/7/2021
 ## Goals for the Week
+- Finish Sage 2 of 
 ## Discussion Notes
 ## Assignments for next week
 
 # 2/14/2021
 ## Goals for the Week
-- Finish up the ChattyBot project to earn another month of free time on JetBrains Acadmy
+- Finish up the [JetBrains Academy ChattyBot Project](https://hyperskill.org/projects/113?track=1).  Finishing it will earn you another month of free time on JetBrains Acadmy
 ## Discussion Notes
 ## Assignments for next week
-- Finish up the ChattyBot project to earn another month of free time on JetBrains Acadmy
+- Finish up the  [JetBrains Academy ChattyBot Project](https://hyperskill.org/projects/113?track=1).
 
 # 2/7/2021
 ## Goals for the Week
@@ -91,11 +92,11 @@ The main goal is to expand our ability to build stuf in Java using modern practi
 # 2/14/2021
 ## Goals for the Week
 ## Discussion Notes
-We reviewed the Sudoku problem from the JetBrains Academy Mine Sweeper problem.
+We reviewed the Sudoku problem from the [JetBrains Academy Mine Sweeper project)](https://hyperskill.org/projects/77?track=1).
 We discussed the code that was in many of the solutions.   The algorithm that seems to be predominant in the solutions on JetBrains Academy is to simply look for duplicate number in the rows and column.   There was another solution that used an additive checksum algorithm to determine if a row or column matched the business rules.  Both algorithms are incomplete and fail in-depth verification.  They rely on the fact that if both the rows and the columns passed the check everything was good, although independantly either check is incomplete and it's easy to formulate a test case that will make them fail.  Both of those aproaches set-off alarm bells because neither approach is verifiability correct.  They might generate the needed output for this simple exercise, but in either case it is easy to develop a test case that makes the code fail.  Even worst the additive checksum approach relies on the columns adding up, and the rows adding up.  That means checkRows() can return true, but it's really only true if checkColumns() is also true.  That introduces a really dangerous logic dependancy between these two code modules.  It's easy enough to write an if statement that says "if( checkRows() && checkColumns) the model is correct".  However if in the future someone tries to re-use checkRows() independently they will find it doesn't work on it's own.  In big systems those bugs are very difficult to find and fix.   As an alternative, we decided it would be better to use TDD and develop several test cases to exercise the code before we wrote a solution.  Those test cases included rows and columns that didn't have duplicates, but failed the sudoku business rules, and rows and columns that passed an additive checksum but failed the sudoku roles due the the communitive property of addition.   In the end our solution was to keep track of the digits we saw in a separate array.   If we saw all the digits we expect know the row or column is correct.
 
 ## Assignments for next week
-- Continue to work through the coding examples in stage 3 and 4 of JetBrains Academy Mine Sweeper project.
+- Continue to work through the coding examples in stage 3 and 4 of [JetBrains Academy Mine Sweeper project)](https://hyperskill.org/projects/77?track=1).
 - Read the Java Coding Conventions at: https://www.oracle.com/java/technologies/javase/codeconventions-introduction.html
 - Listen to: [Security Now Podcast 807](https://twit.tv/shows/security-now/episodes/807) Dependancy Coversion story at 1:28:30 at:
 - Listen to the [Security Now Podcast 807](https://twit.tv/shows/security-now/episodes/807) story on Microsoft's final “Solorigate” update at 50:00.  It emphasized the importance of keeping secrets separate from your code.
@@ -112,5 +113,5 @@ We discussed the code that was in many of the solutions.   The algorithm that se
 - Gaming Headphones for Remote Pairing - most popular among John's collegues are: https://www.amazon.com/Sennheiser-GAME-Gaming-Headset-Black/dp/B00KNPYAEY/ref=sr_1_3?crid=2194G9CC7H1R9&dchild=1&keywords=senhiesers+headphones+gaming&qid=1614535781&s=electronics&sprefix=senh%2Celectronics%2C208&sr=1-3
 - Lithium Ion Car Jumpstarters also make great general use portable power packs: https://www.amazon.com/s?k=car+jump+starter&i=automotive&ref=nb_sb_noss_1
 ## Assignments for next week
-- Continue to work through the coding examples in stage 3 and 4 of JetBrains Academy Mine Sweeper project.
+- Continue to work through the coding examples in stage 3 and 4 of [JetBrains Academy Mine Sweeper project)](https://hyperskill.org/projects/77?track=1).
 - Listen to the ComputerPhile episode on Programming Loops vs Recursion at: https://www.youtube.com/watch?v=HXNhEYqFo0o
