@@ -67,7 +67,7 @@ The main goal is to expand our ability to build stuf in Java using modern practi
 - Finish Stage 1 of the  [JetBrains Mindsweeper Exercises](https://hyperskill.org/curriculum) (~3 hours)
 - Start Stage 2 of the [JetBrains Mindsweeper Exercises](https://hyperskill.org/curriculum) but stop after the Functional Decomposition module (~1.5 hour)
 - Read [An introduction to the Unified Modeling Language](https://developer.ibm.com/articles/an-introduction-to-uml/) (15 minutes)
-- Read [Unified Modeling Language | An Introduction](https://www.geeksforgeeks.org/unified-modeling-language-uml-introduction/) and the Recommended articles linked at the bottom of the page. (20 minutes)
+- Read [Unified Modeling Language: An Introduction](https://www.geeksforgeeks.org/unified-modeling-language-uml-introduction/) and the Recommended articles linked at the bottom of the page. (20 minutes)
 - Review [The Five SOLID Principals of Object-Oriented Design](https://www.youtube.com/watch?v=HyQlCMU_Ylw) Video  (15 minutes)
 - Read [Design Patterns](https://en.wikipedia.org/wiki/Design_Patterns] article on Wikipiedia (10 minutes)
 
