@@ -98,7 +98,7 @@ We discussed the code that was in many of the solutions.   The algorithm that se
 
 ### Assignments for next week
 - Continue to work through the coding examples in stage 3 and 4 of JetBrains Academy Mine Sweeper project.
-- Read the Java Coding Conventions at: https://www.oracle.com/java/technologies/javase/codeconventions-introduction.htmlListen to the ComputerPhile episode on Programming Loops vs Recursion at: https://www.youtube.com/watch?v=HXNhEYqFo0o
+- Read the Java Coding Conventions at: https://www.oracle.com/java/technologies/javase/codeconventions-introduction.html
 - Listen to: Security Now Podcast 807 Dependancy Coversion story at 1:28:30. 
 - Listen to the story on Microsoft's final “Solorigate” update at 50:00.  It emphasized the importance of keeping secrets separate from your code.
 
@@ -110,5 +110,9 @@ We discussed the code that was in many of the solutions.   The algorithm that se
 - Discuss the story on Microsoft's final “Solorigate” update at 50:00 of Security Now 807.  It emphasized the importance of keeping secrets separate from your code.
 - Review Interesting coding issues that came up in this weeks exercises from JetBrains Academy Mine Sweeper project.
 ### Discussion Notes
+#### Random Topics:
+- Gaming Headphones for Remote Pairing - most popular among John's collegues are: https://www.amazon.com/Sennheiser-GAME-Gaming-Headset-Black/dp/B00KNPYAEY/ref=sr_1_3?crid=2194G9CC7H1R9&dchild=1&keywords=senhiesers+headphones+gaming&qid=1614535781&s=electronics&sprefix=senh%2Celectronics%2C208&sr=1-3
+- Lithium Ion Car Jumpstarters also make great general use portable power packs: https://www.amazon.com/s?k=car+jump+starter&i=automotive&ref=nb_sb_noss_1
 ### Assignments for next week
 - Continue to work through the coding examples in stage 3 and 4 of JetBrains Academy Mine Sweeper project.
+- Listen to the ComputerPhile episode on Programming Loops vs Recursion at: https://www.youtube.com/watch?v=HXNhEYqFo0o
