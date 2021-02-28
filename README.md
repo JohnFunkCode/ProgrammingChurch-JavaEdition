@@ -107,7 +107,7 @@ We discussed the code that was in many of the solutions.   The algorithm that se
 - Continue to work through the coding examples in stage 3 and 4 of [JetBrains Academy Mine Sweeper project)](https://hyperskill.org/projects/77?track=1).
 - Read the Java Coding Conventions at: https://www.oracle.com/java/technologies/javase/codeconventions-introduction.html
 - Listen to: [Security Now Podcast 807](https://twit.tv/shows/security-now/episodes/807) Dependancy Coversion story at 1:28:30
-- Listen to the [Security Now Podcast 807](https://twit.tv/shows/security-now/episodes/807) story on Microsoft's final “Solorigate” update at 50:00.  It emphasized the importance of keeping secrets separate from your code.
+- Listen to the [Security Now Podcast 807](https://twit.tv/shows/security-now/episodes/807) story on Microsoft's final “Solorigate” update at 50:00.  It emphasized the importance of keeping secrets separate from your code.  
 [![Security Now Podcast 807](SecurityNow807.png)](https://twit.tv/shows/security-now/episodes/807)
 
 # 2/14/2021
