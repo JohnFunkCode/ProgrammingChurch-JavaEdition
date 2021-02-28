@@ -25,7 +25,7 @@ The main goal is to expand our ability to build stuf in Java using modern practi
 - Do all the modules in the [w3schools program Java Tutorial](https://www.w3schools.com/java/default.asp) up to the Java Classes section
 - Read [Introdution to the Java Environment](https://www.oreilly.com/library/view/java-in-a/9781492037248/ch01.html)
 - Do the first 10 modules of [Mike Dane's Java Programming Language Tutorial](https://www.youtube.com/playlist?list=PLLAZ4kZ9dFpPpdR_9IQBUDLjYalvdrGGb)
-- Do stage 1 of JetBrains Academy Java material on [Mindsweeper project](https://hyperskill.org/curriculum)
+- Do stage 1 of JetBrains Academy Java material on [Mindsweeper Project](https://hyperskill.org/curriculum)
 ## Notes from our 1/24/2021 live discussion
 - Java Compiler, JVM, and basics of the Classloader and Packages
 - Building and running 'hello world' without a package and inside a package - Related Article: [Introduction to Default Package in Java](https://www.educba.com/default-package-in-java/)
@@ -73,7 +73,7 @@ The main goal is to expand our ability to build stuf in Java using modern practi
 
 # 2/7/2021
 ## Goals for the Week
-- Finish Sage 2 of  [JetBrains Academy Mine Sweeper project)](https://hyperskill.org/projects/77?track=1).
+- Finish Sage 2 of  [JetBrains Academy Mine Sweeper Project](https://hyperskill.org/projects/77?track=1).
 
 # 2/14/2021
 ## Goals for the Week
@@ -85,22 +85,22 @@ The main goal is to expand our ability to build stuf in Java using modern practi
 ## Goals for the Week
 - Discuss plan to move forward with JetBrain Academy even after the free trial period expires.
 - Additional projects to tackle include:
-   1. Phone Book - algorithm knowledge - 25 hours
-   2. Encryption-Decryption - OO & File Handling - 22 hours
-   3. Sorting Tool - collection framework, files, exception hiearchy - 30 hours
-   4. Contacts - Polymorphism - 34 hours
-   5. Simple Banking - SQL - 24 hours
-   6. Web Quiz Engine - Spring Rest - 32 hours
-   7. Music Advisor - Calling Spoity's API, Generics, Design Patterns - 28 hours
-   8. Code Sharing Platform - Spring Boot, databases, - 33 hours
-   9. Game of Life - Swing - 26 hours
+   1. [Phone Book](https://hyperskill.org/projects/63?track=1) - algorithm knowledge - 25 hours (Hard)
+   2. [Encryption-Decryption](https://hyperskill.org/projects/46?track=1) - OO & File Handling - 22 hours (Medium)
+   3. [Sorting Tool](https://hyperskill.org/projects/45?track=1) - collection framework, files, exception hiearchy - 30 hours (Hard)
+   4. [Contacts](https://hyperskill.org/projects/43?track=1) - Polymorphism - 34 hours (Challenging)
+   5. [Simple Banking](https://hyperskill.org/projects/93?track=1) - SQL - 24 hours (Hard)
+   6. [Web Quiz Engine](https://hyperskill.org/projects/91?track=1) - Spring Rest - 32 hours (Challenging)
+   7. [Music Advisor](https://hyperskill.org/projects/62?track=1) - Calling Spoity's API, Generics, Design Patterns - 28 hours (Hard)
+   8. [Code Sharing Platform](https://hyperskill.org/projects/130?track=1) - Spring Boot, databases, - 33 hours (Challenging)
+   9. [Game of Life](https://hyperskill.org/projects/54?track=1) - Swing - 26 hours (Hard)
 ## Assignments for next week
 - Start the coding examples in stage 3 and 4 of [JetBrains Academy Mine Sweeper project](https://hyperskill.org/projects/77?track=1).
 
 # 2/14/2021
 ## Goals for the Week
 ## Discussion Notes
-We reviewed the Sudoku problem from the [JetBrains Academy Mine Sweeper project)](https://hyperskill.org/projects/77?track=1).
+We reviewed the Sudoku problem from the [JetBrains Academy Mine Sweeper Project](https://hyperskill.org/projects/77?track=1).
 We discussed the code that was in many of the solutions.   The algorithm that seems to be predominant in the solutions on JetBrains Academy is to simply look for duplicate number in the rows and column.   There was another solution that used an additive checksum algorithm to determine if a row or column matched the business rules.  Both algorithms are incomplete and fail in-depth verification.  They rely on the fact that if both the rows and the columns passed the check everything was good, although independantly either check is incomplete and it's easy to formulate a test case that will make them fail.  Both of those aproaches set-off alarm bells because neither approach is verifiability correct.  They might generate the needed output for this simple exercise, but in either case it is easy to develop a test case that makes the code fail.  Even worst the additive checksum approach relies on the columns adding up, and the rows adding up.  That means checkRows() can return true, but it's really only true if checkColumns() is also true.  That introduces a really dangerous logic dependancy between these two code modules.  It's easy enough to write an if statement that says "if( checkRows() && checkColumns) the model is correct".  However if in the future someone tries to re-use checkRows() independently they will find it doesn't work on it's own.  In big systems those bugs are very difficult to find and fix.   As an alternative, we decided it would be better to use TDD and develop several test cases to exercise the code before we wrote a solution.  Those test cases included rows and columns that didn't have duplicates, but failed the sudoku business rules, and rows and columns that passed an additive checksum but failed the sudoku roles due the the communitive property of addition.   In the end our solution was to keep track of the digits we saw in a separate array.   If we saw all the digits we expect know the row or column is correct.
 
 ## Assignments for next week
