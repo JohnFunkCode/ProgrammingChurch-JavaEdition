@@ -125,6 +125,6 @@ We discussed the code that was in many of the solutions.   The algorithm that se
 ![Viozon vesa arm mount system](https://images-na.ssl-images-amazon.com/images/I/61n%2BYzdSCPL._AC_SL1500_.jpg)
 
 ## Assignments for next week
-- Continue to work through the coding examples in stage 3 and 4 of [JetBrains Academy Mine Sweeper project)](https://hyperskill.org/projects/77?track=1).
+- Continue to work through the coding examples in stage 3 and 4 of [JetBrains Academy Mine Sweeper Project](https://hyperskill.org/projects/77?track=1).
 - Listen to the [Computerphile episode on Programming Loops vs Recursion](https://www.youtube.com/watch?v=HXNhEYqFo0o)
 [![Programming Loops vs Recursion](ProgrammingLoopsvsRecursion-Computerphile.png)](https://www.youtube.com/watch?v=HXNhEYqFo0o)
