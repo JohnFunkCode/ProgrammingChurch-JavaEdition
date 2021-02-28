@@ -65,7 +65,7 @@ The main goal is to expand our ability to build stuf in Java using modern practi
     * Interface Segregation - create an Object that's a composite of other Objects
     * Dependency Injection 
 
-## Assignments for next week
+### Assignments for next week
 - Finish Stage 1 of the  [JetBrains Mindsweeper Exercises](https://hyperskill.org/curriculum) (~3 hours)
 - Start Stage 2 of the [JetBrains Mindsweeper Exercises](https://hyperskill.org/curriculum) but stop after the Functional Decomposition module (~1.5 hour)
 - Read [An introduction to the Unified Modeling Language](https://developer.ibm.com/articles/an-introduction-to-uml/) (15 minutes)
@@ -73,3 +73,42 @@ The main goal is to expand our ability to build stuf in Java using modern practi
 - Review [The Five SOLID Principals of Object-Oriented Design](https://www.youtube.com/watch?v=HyQlCMU_Ylw) Video  (15 minutes)
 - Read [Design Patterns](https://en.wikipedia.org/wiki/Design_Patterns] article on Wikipiedia (10 minutes)
 
+## 2/7/2021
+### Goals for the Week
+### Discussion Notes
+### Assignments for next week
+
+## 2/14/2021
+### Goals for the Week
+- Finish up the ChattyBot project to earn another month of free time on JetBrains Acadmy
+### Discussion Notes
+### Assignments for next week
+- Finish up the ChattyBot project to earn another month of free time on JetBrains Acadmy
+
+## 2/7/2021
+### Goals for the Week
+### Discussion Notes
+### Assignments for next week
+
+## 2/14/2021
+### Goals for the Week
+### Discussion Notes
+We reviewed the Sudoku problem from the JetBrains Academy Mine Sweeper problem.
+We discussed the code that was in many of the solutions.   The algorithm that seems to be predominant in the solutions on JetBrains Academy is to simply look for duplicate number in the rows and column.   There was another solution that used an additive checksum algorithm to determine if a row or column matched the business rules.  Both algorithms are incomplete and fail in-depth verification.  They rely on the fact that if both the rows and the columns passed the check everything was good, although independantly either check is incomplete and it's easy to formulate a test case that will make them fail.  Both of those aproaches set-off alarm bells because neither approach is verifiability correct.  They might generate the needed output for this simple exercise, but in either case it is easy to develop a test case that makes the code fail.  Even worst the additive checksum approach relies on the columns adding up, and the rows adding up.  That means checkRows() can return true, but it's really only true if checkColumns() is also true.  That introduces a really dangerous logic dependancy between these two code modules.  It's easy enough to write an if statement that says "if( checkRows() && checkColumns) the model is correct".  However if in the future someone tries to re-use checkRows() independently they will find it doesn't work on it's own.  In big systems those bugs are very difficult to find and fix.   As an alternative, we decided it would be better to use TDD and develop several test cases to exercise the code before we wrote a solution.  Those test cases included rows and columns that didn't have duplicates, but failed the sudoku business rules, and rows and columns that passed an additive checksum but failed the sudoku roles due the the communitive property of addition.   In the end our solution was to keep track of the digits we saw in a separate array.   If we saw all the digits we expect know the row or column is correct.
+
+### Assignments for next week
+- Continue to work through the coding examples in stage 3 and 4 of JetBrains Academy Mine Sweeper project.
+- Read the Java Coding Conventions at: https://www.oracle.com/java/technologies/javase/codeconventions-introduction.htmlListen to the ComputerPhile episode on Programming Loops vs Recursion at: https://www.youtube.com/watch?v=HXNhEYqFo0o
+- Listen to: Security Now Podcast 807 Dependancy Coversion story at 1:28:30. 
+- Listen to the story on Microsoft's final “Solorigate” update at 50:00.  It emphasized the importance of keeping secrets separate from your code.
+
+## 2/14/2021
+### Goals for the Week
+- Discuss coding style
+- Discuss recursion vs loops for problem solving
+- Discuss the Dependancy Confusion sectin of Security Now 807.  It demonstrate that the industry puts too much trust on external dependancies, and also shows how one creative bounty hunter put dependancy management strategies of today's dynamic languages to work to earn significant payouts from several bug bounty programs.
+- Discuss the story on Microsoft's final “Solorigate” update at 50:00 of Security Now 807.  It emphasized the importance of keeping secrets separate from your code.
+- Review Interesting coding issues that came up in this weeks exercises from JetBrains Academy Mine Sweeper project.
+### Discussion Notes
+### Assignments for next week
+- Continue to work through the coding examples in stage 3 and 4 of JetBrains Academy Mine Sweeper project.
