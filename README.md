@@ -118,10 +118,12 @@ We discussed the code that was in many of the solutions.   The algorithm that se
 - Review Interesting coding issues that came up in this weeks exercises from JetBrains Academy Mine Sweeper project.
 ## Discussion Notes
 ### Random Topics:
+- [Lithium Ion Car Jumpstarters](https://www.amazon.com/s?k=car+jump+starter&i=automotive&ref=nb_sb_noss_1) are a great way to jumpstart cars in winter.  They also make great general use portable power packs for all sorts of purposes.
 - Gaming Headphones for Remote Pairing - [The Sennheiser Gaming Headset](https://www.amazon.com/Sennheiser-GAME-Gaming-Headset-Black/dp/B00KNPYAEY/ref=sr_1_3?crid=2194G9CC7H1R9&dchild=1&keywords=senhiesers+headphones+gaming&qid=1614535781&s=electronics&sprefix=senh%2Celectronics%2C208&sr=1-3) is the most popular among John's collegues.
 - Work From Home Desk Enhancements - John's latest addition to his WFH office is an [adjustable vesa arm mounting system](https://www.amazon.com/gp/product/B086W3L2XB/ref=ppx_yo_dt_b_asin_title_o08_s01?ie=UTF8&psc=1) to hold his laptop, monitor, and other accessories.
 ![Viozon vesa arm mount system](https://images-na.ssl-images-amazon.com/images/I/61n%2BYzdSCPL._AC_SL1500_.jpg)
-- [Lithium Ion Car Jumpstarters](https://www.amazon.com/s?k=car+jump+starter&i=automotive&ref=nb_sb_noss_1) are a great way to jumpstart cars in winter.  They also make great general use portable power packs for all sorts of purposes.
+
 ## Assignments for next week
 - Continue to work through the coding examples in stage 3 and 4 of [JetBrains Academy Mine Sweeper project)](https://hyperskill.org/projects/77?track=1).
-- Listen to the ComputerPhile episode on Programming Loops vs Recursion at: https://www.youtube.com/watch?v=HXNhEYqFo0o
+- Listen to the [Computerphile episode on Programming Loops vs Recursion](https://www.youtube.com/watch?v=HXNhEYqFo0o)
+[![Programming Loops vs Recursion](ProgrammingLoopsvsRecursion-Computerphile.png)](https://www.youtube.com/watch?v=HXNhEYqFo0o)
