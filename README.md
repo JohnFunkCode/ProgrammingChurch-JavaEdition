@@ -67,27 +67,35 @@ The main goal is to expand our ability to build stuf in Java using modern practi
 - Finish Stage 1 of the  [JetBrains Mindsweeper Exercises](https://hyperskill.org/curriculum) (~3 hours)
 - Start Stage 2 of the [JetBrains Mindsweeper Exercises](https://hyperskill.org/curriculum) but stop after the Functional Decomposition module (~1.5 hour)
 - Read [An introduction to the Unified Modeling Language](https://developer.ibm.com/articles/an-introduction-to-uml/) (15 minutes)
-- Read [Unified Modeling Language (UML) | An Introduction](https://www.geeksforgeeks.org/unified-modeling-language-uml-introduction/] and the Recommended articles linked at the bottom of the page. (20 minutes)
+- Read [Unified Modeling Language | An Introduction](https://www.geeksforgeeks.org/unified-modeling-language-uml-introduction/) and the Recommended articles linked at the bottom of the page. (20 minutes)
 - Review [The Five SOLID Principals of Object-Oriented Design](https://www.youtube.com/watch?v=HyQlCMU_Ylw) Video  (15 minutes)
 - Read [Design Patterns](https://en.wikipedia.org/wiki/Design_Patterns] article on Wikipiedia (10 minutes)
 
 # 2/7/2021
 ## Goals for the Week
-- Finish Sage 2 of 
-## Discussion Notes
-## Assignments for next week
+- Finish Sage 2 of  [JetBrains Academy Mine Sweeper project)](https://hyperskill.org/projects/77?track=1).
 
 # 2/14/2021
 ## Goals for the Week
 - Finish up the [JetBrains Academy ChattyBot Project](https://hyperskill.org/projects/113?track=1).  Finishing it will earn you another month of free time on JetBrains Acadmy
-## Discussion Notes
 ## Assignments for next week
 - Finish up the  [JetBrains Academy ChattyBot Project](https://hyperskill.org/projects/113?track=1).
 
 # 2/7/2021
 ## Goals for the Week
-## Discussion Notes
+- Discuss plan to move forward with JetBrain Academy even after the free trial period expires.
+- Additional projects to tackle include:
+   1. Phone Book - algorithm knowledge - 25 hours
+   2. Encryption-Decryption - OO & File Handling - 22 hours
+   3. Sorting Tool - collection framework, files, exception hiearchy - 30 hours
+   4. Contacts - Polymorphism - 34 hours
+   5. Simple Banking - SQL - 24 hours
+   6. Web Quiz Engine - Spring Rest - 32 hours
+   7. Music Advisor - Calling Spoity's API, Generics, Design Patterns - 28 hours
+   8. Code Sharing Platform - Spring Boot, databases, - 33 hours
+   9. Game of Life - Swing - 26 hours
 ## Assignments for next week
+- Start the coding examples in stage 3 and 4 of [JetBrains Academy Mine Sweeper project](https://hyperskill.org/projects/77?track=1).
 
 # 2/14/2021
 ## Goals for the Week
