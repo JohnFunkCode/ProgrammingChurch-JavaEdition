@@ -85,15 +85,15 @@ The main goal is to expand our ability to build stuf in Java using modern practi
 ## Goals for the Week
 - Discuss plan to move forward with JetBrain Academy even after the free trial period expires.
 - Additional projects to tackle include:
-   1. [Phone Book](https://hyperskill.org/projects/63?track=1) - algorithm knowledge - 25 hours (Hard)
-   2. [Encryption-Decryption](https://hyperskill.org/projects/46?track=1) - OO & File Handling - 22 hours (Medium)
-   3. [Sorting Tool](https://hyperskill.org/projects/45?track=1) - collection framework, files, exception hiearchy - 30 hours (Hard)
-   4. [Contacts](https://hyperskill.org/projects/43?track=1) - Polymorphism - 34 hours (Challenging)
-   5. [Simple Banking](https://hyperskill.org/projects/93?track=1) - SQL - 24 hours (Hard)
-   6. [Web Quiz Engine](https://hyperskill.org/projects/91?track=1) - Spring Rest - 32 hours (Challenging)
-   7. [Music Advisor](https://hyperskill.org/projects/62?track=1) - Calling Spoity's API, Generics, Design Patterns - 28 hours (Hard)
-   8. [Code Sharing Platform](https://hyperskill.org/projects/130?track=1) - Spring Boot, databases, - 33 hours (Challenging)
-   9. [Game of Life](https://hyperskill.org/projects/54?track=1) - Swing - 26 hours (Hard)
+  - [Phone Book](https://hyperskill.org/projects/63?track=1) - Algorithm knowledge - 25 hours (Hard)
+  - [Encryption-Decryption](https://hyperskill.org/projects/46?track=1) - OO & File Handling - 22 hours (Medium)
+  - [Sorting Tool](https://hyperskill.org/projects/45?track=1) - Collection framework, files, exception hiearchy - 30 hours (Hard)
+  - [Contacts](https://hyperskill.org/projects/43?track=1) - Polymorphism - 34 hours (Challenging)
+  - [Simple Banking](https://hyperskill.org/projects/93?track=1) - SQL - 24 hours (Hard)
+  - [Web Quiz Engine](https://hyperskill.org/projects/91?track=1) - Spring Rest - 32 hours (Challenging)
+  - [Music Advisor](https://hyperskill.org/projects/62?track=1) - Calling Spoity's API, Generics, Design Patterns - 28 hours (Hard)
+  - [Code Sharing Platform](https://hyperskill.org/projects/130?track=1) - Spring Boot, databases, - 33 hours (Challenging)
+  - [Game of Life](https://hyperskill.org/projects/54?track=1) - Swing - 26 hours (Hard)
 ## Assignments for next week
 - Start the coding examples in stage 3 and 4 of [JetBrains Academy Mine Sweeper project](https://hyperskill.org/projects/77?track=1).
 
