@@ -108,7 +108,7 @@ We discussed the code that was in many of the solutions.   The algorithm that se
 - Read the Java Coding Conventions at: https://www.oracle.com/java/technologies/javase/codeconventions-introduction.html
 - Listen to: [Security Now Podcast 807](https://twit.tv/shows/security-now/episodes/807) Dependancy Coversion story at 1:28:30
 - Listen to the [Security Now Podcast 807](https://twit.tv/shows/security-now/episodes/807) story on Microsoft's final “Solorigate” update at 50:00.  It emphasized the importance of keeping secrets separate from your code.
-[![Security Now Podcast 807](SecurityNow807.png)]((https://twit.tv/shows/security-now/episodes/807)
+[![Security Now Podcast 807](SecurityNow807.png)](https://twit.tv/shows/security-now/episodes/807)
 
 # 2/14/2021
 ## Goals for the Week
