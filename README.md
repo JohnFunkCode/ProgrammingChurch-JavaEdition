@@ -176,7 +176,7 @@ public class Main {
 - Listen to the [Security Now Podcast 807](https://twit.tv/shows/security-now/episodes/807) story on Microsoft's final “Solorigate” update at 50:00.  It emphasized the importance of keeping secrets separate from your code.
 [![Security Now Podcast 807](SecurityNow807.png)](https://twit.tv/shows/security-now/episodes/807)
 
-# 2/14/2021
+# 3/1/2021
 ## Goals for the Week
 - Discuss coding style
 - Discuss recursion vs loops for problem solving
@@ -194,3 +194,67 @@ public class Main {
 - Continue to work through the coding examples in stage 3 and 4 of [JetBrains Academy Mine Sweeper Project](https://hyperskill.org/projects/77?track=1).
 - Listen to the [Computerphile episode on Programming Loops vs Recursion](https://www.youtube.com/watch?v=HXNhEYqFo0o)
 [![Programming Loops vs Recursion](ProgrammingLoopsvsRecursion-Computerphile.png)](https://www.youtube.com/watch?v=HXNhEYqFo0o)
+
+# 3/7/2021
+## Goals for the Week
+- Review Interesting coding issues that came up in this weeks exercises from JetBrains Academy Mine Sweeper project.
+## Discussion Notes
+  This week we concentrated on the following problem taken from [JetBrains Academy Mine Sweeper Project](https://hyperskill.org/projects/77?track=1) titled "ArrayList - Find the nearest number"
+<img width="1094" alt="Screen Shot 2021-03-09 at 9 08 57 PM" src="https://user-images.githubusercontent.com/28072589/110575198-bb375d80-811b-11eb-8ff0-16fb3fc5c173.png">
+  One approach we liked is shown in code below. We've included only the main functionality for sake of brevity. After recording the inputs (variables `list` and `value`), we create a second array, `distanceFromValue` recording the absolute difference between the array value and the target number.  We considered, instead of creating a separate array, utilizing a custom class that contained both the original value and the difference value as the basis of the new list as separate lists have the possiblity of getting out of sync. 
+  Next in our solution we identify the minimum difference value. Finally, we store any and all original values that correspond in an output array, `nearest`, sorting `nearest` before printing as asked.  
+  An immediately noticeable refactor that would improve readability would be to use `Collections.sort` since we are comparing `int` values, a common sort that doesn't require a special comparison function.
+
+```java
+private static ArrayList<Integer> getNearestNumbers(ArrayList<Integer> list, int value) {
+    ArrayList<Integer> distanceFromValue = new ArrayList<>(list);
+    for (int i = 0; i < distanceFromValue.size(); i++) {
+        distanceFromValue.set(i, Math.abs(list.get(i) - value));
+    }
+
+    Optional<Integer> min = distanceFromValue.stream().min(Comparator.comparing(Integer::intValue));
+
+    ArrayList<Integer> nearest = new ArrayList<>();
+    for (int i = 0; i < distanceFromValue.size(); i++) {
+        if (distanceFromValue.get(i).equals(min.get())) {
+            nearest.add(list.get(i));
+        }
+    }
+    nearest.sort(Comparator.comparing(Integer::intValue));
+    return nearest;
+  }
+```
+
+  This solution is serviceable but we found and discussed a nice solution posted by user "Lazar" shown in full below.  Lazar posted 2 solutions, which allowed us to see thier optimization technique. They started off similar to our solution, creating a new output array and adding the original value if it matched a calculated minimum difference value.  Neither solution recorded the difference values, prefering a temporary variable the first time around and the map you see below the second.  Note in the below solution, Lazar sets `minArrayValue` to 0 if a minimum isn't found which more accuratly reflects the required business logic than the unhandled `Optional<Integer>` above. 
+
+```java
+import java.util.*;
+import java.util.stream.Collectors;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<Integer> numbersList = Arrays.stream(scanner.nextLine().split("\\s"))
+                .map(Integer::parseInt)
+                .sorted()
+                .collect(Collectors.toCollection(ArrayList::new));
+
+        int num = scanner.nextInt();
+
+        int minArrayValue = numbersList.stream()
+                .mapToInt(n -> Math.abs(n - num))
+                .min().orElse(0);
+
+        numbersList.forEach(n -> {
+            if (Math.abs(n - num) == minArrayValue) {
+                System.out.print(n + " ");
+            }
+        });
+    }
+}
+```
+
+## Assignments for next week
+- Continue to work through the coding examples in stage 3 and 4 of [JetBrains Academy Mine Sweeper Project](https://hyperskill.org/projects/77?track=1).
+
